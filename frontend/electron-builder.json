@@ -1,0 +1,43 @@
+{
+  "asar": true,
+  "directories": {
+    "output": "release/"
+  },
+  "files": [
+    "**/*",
+    "!**/*.ts",
+    "!*.map",
+    "!package.json",
+    "!package-lock.json",
+    {
+      "from": "../dist",
+      "filter": ["**/*"]
+    }
+  ],
+  "extraResources": [{
+    "from": "./python/app.exe",
+    "to": "python/app.exe",
+    "filter": ["**/*"]
+  }],
+  "win": {
+    "icon": "dist/assets/icons/favicon.ico",
+    "target": [
+      "portable"
+    ]
+  },
+  "portable": {
+    "splashImage": "dist/assets/icons/electron.bmp"
+  },
+  "mac": {
+    "icon": "dist/assets/icons/favicon.icns",
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "dist/assets/icons/favicon.png",
+    "target": [
+      "AppImage"
+    ]
+  }
+}

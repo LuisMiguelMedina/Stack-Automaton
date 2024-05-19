@@ -1,0 +1,13 @@
+{
+  "name": "automata-de-pila",
+  "description": "Ejemplo de un automata de pila",
+  "author": {
+    "name": "Luis Medina",
+    "page": "https://github.com/LuisMiguelMedina"
+  },
+  "version": "1.0.0",
+  "main": "main.js",
+  "private": true,
+  "dependencies": {
+  }
+}
